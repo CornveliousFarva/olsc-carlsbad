@@ -2,7 +2,8 @@ import React from 'react'
 
 function About(){
     return(
-        <h1> </h1>
+        <h1>About the Group</h1>
+        
     )
 }
 

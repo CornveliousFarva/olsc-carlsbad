@@ -10,7 +10,7 @@ function Footer() {
                     <ui className="social-list">
                         <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
                         <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                        <li></li>
+                        <li>Email <link></link></li>
                     </ui>
                 </div>
             </div>
