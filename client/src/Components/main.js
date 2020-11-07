@@ -7,7 +7,6 @@ import Events from './Events';
 import Pics from './Pics';
 
 
-
 const Main = () => (
   <Switch>
     <Route exact path="/" component={Home} />

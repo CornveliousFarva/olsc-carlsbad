@@ -17,8 +17,8 @@ class Home extends Component {
 
             <div className="banner-text">
               <h1>Official Liverpool FC Supporters Club - Carlsbad, California</h1>
-                <p>Club Motto Here</p>
-                <p></p>
+                <p>Community | Unity | Passion</p>
+                <p>Representing supporters of Liverpool FC in Northern San Diego.</p>
             <hr/>
 
 
