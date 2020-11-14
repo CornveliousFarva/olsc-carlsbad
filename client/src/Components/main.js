@@ -1,18 +1,20 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from './Home';
-import About from './About';
-import Events from './Events';
-import Pics from './Pics';
+import LandingPage from './landingpage';
+import AboutUs from './aboutus';
+import Events from './events';
+import Projects from './projects';
+import Resume from './resume';
 
 
 const Main = () => (
   <Switch>
-    <Route exact path="/" component={Home} />
-    <Route path="/about" component={About} />
-    <Route path="/events" component={Events} />
-    <Route path="/pics" component={Pics} />
+    <Route exact path="/" component={LandingPage} />
+    <Route path="/aboutus" component={AboutUs} />
+    <Route path="/Events" component={Events} />
+    <Route path="/projects" component={Projects} />
+    <Route path="/resume" component={Resume} />
   </Switch>
 )
 

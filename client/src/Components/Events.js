@@ -1,17 +1,13 @@
 import React from 'react'
-import Footer from './Footer'
 
-function Events (){
-    return(
-        <div className="events-container">
-            <h1>Ucoming Matches and Events</h1>
-            <h2>Note: due to Covid-related restrictions, game meetups are subject to change. Schedule is also subject to change due to league obligations</h2>
-            <p>Games</p>
-            <ul>
-                <l1></l1>
-            </ul>
-        <Footer />
-        </div>
-    )
-}
+    function Events(){
+        return(
+            <div className="events-container">
+                <h1>Upcoming Games and Events</h1>
+                <p>Note 1: Game times are subject to change.</p>
+                <p>Note 2: Due to Covid restrictions, event meetups are also subject to change based on local health guidelines</p>
+            </div>
+        )
+    }
+
 export default Events
