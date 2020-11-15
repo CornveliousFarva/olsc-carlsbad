@@ -1,57 +1,23 @@
-import React, { useState } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from 'reactstrap';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Navbar, Footer, LandingPage, About, Events, ScarfPics, GroupPics } from "./components";
 
-const Example = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
+function App() {
   return (
-    <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand to="/">Carlsbad Kopites</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <Link to="/components/about.js">About Us</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/components/events">Events</Link>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Pictures
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  <Link to="/components/groupPics">Group Photos</Link>
-                </DropdownItem>
-                <DropdownItem>
-                <NavLink to="/components/scarfPics">Scarf Photos</NavLink>
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-          <NavbarText>Simple Text</NavbarText>
-        </Collapse>
-      </Navbar>
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={() => <LandingPage />} />
+          <Route path="/about" exact component={() => <About />} />
+          <Route path="/contact" exact component={() => <Events />} />
+          <Route path="/contact" exact component={() => <ScarfPics />} />
+          <Route path="/contact" exact component={() => <GroupPics />} />
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   );
 }
 
-export default Example;
+export default App;
