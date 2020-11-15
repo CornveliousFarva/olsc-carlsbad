@@ -6,7 +6,7 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-import css from 'landingpage.css'
+
 
 
 const items = [
