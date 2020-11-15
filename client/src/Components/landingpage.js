@@ -16,7 +16,7 @@ const Landing = (props) => {
         <Col><i class="fa fa-instagram" aria-hidden="true"></i></Col>
         <Col><i class="fa fa-facebook" aria-hidden="true"></i></Col>
         <Col><i class="fa fa-twitter" aria-hidden="true"></i></Col>
-        <Col></Col>
+        <Col>Email:</Col>
         <Col></Col>
         <Col></Col>
       </Row>
