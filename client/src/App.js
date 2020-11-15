@@ -1,37 +1,57 @@
-import React, { Component } from 'react';
-import './App.css';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import Main from './components/main'
+import React, { useState } from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText
+} from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="demo-big-content">
-    <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Carlsbad Kopites</Link>} scroll>
-            <Navigation>
-                <Link to="/resume">Events</Link>
-                <Link to="/about">About Us</Link>
-                <Link to="/pics">Pics</Link>
-            </Navigation>
-        </Header>
-        <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Carlsbad Kopites</Link>}>
-            <Navigation>
-                <Link to="/resume">Events</Link>
-                <Link to="/about">About Us</Link>
-                <Link to="/pics">Pics</Link>
-            </Navigation>
-        </Drawer>
-        <Content>
-            <div className="page-content" />
-            <Main/>
-        </Content>
-    </Layout>
-</div>
+const Example = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    );
-  }
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <div>
+      <Navbar color="light" light expand="md">
+        <NavbarBrand to="/">Carlsbad Kopites</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+              <Link to="/components/about.js">About Us</Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/components/events">Events</Link>
+            </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Pictures
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>
+                  <Link to="/components/groupPics">Group Photos</Link>
+                </DropdownItem>
+                <DropdownItem>
+                <NavLink to="/components/scarfPics">Scarf Photos</NavLink>
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+          <NavbarText>Simple Text</NavbarText>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
 }
 
-export default App;
+export default Example;
