@@ -1,17 +1,24 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { Component } from 'react';
+import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/aboutus';
+import News from './components/News';
+import Navbar from './components/CustomNavbar';
 
-import LandingPage from './landingpage';
-import AboutUs from './aboutus';
-import Events from './events';
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div>
+          <Navbar />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/news" component={News} />
+        </div>
+      </Router>
+    );
+  }
+}
 
-
-const Main = () => (
-  <Switch>
-    <Route exact path="/" component={LandingPage} />
-    <Route path="/aboutus" component={AboutUs} />
-    <Route path="/events" component={Events} />
-  </Switch>
-)
-
-export default Main;
+export default App;

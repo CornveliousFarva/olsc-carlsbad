@@ -1,9 +1,11 @@
 import React from 'react';
 import { Jumbotron, Container, Row, Col } from 'reactstrap';
+import Navbar from './navbar'
 
 const Landing = (props) => {
   return (
     <div>
+      <Navbar></Navbar>
       <Jumbotron fluid>
         <Container fluid>
           <h1 className="display-3">Official Liverpool FC Supporters Club- Carlsbad, California</h1>
@@ -13,9 +15,9 @@ const Landing = (props) => {
       </Jumbotron>
       <Container>
       <Row>
-        <Col><i class="fa fa-instagram" aria-hidden="true"></i></Col>
-        <Col><i class="fa fa-facebook" aria-hidden="true"></i></Col>
-        <Col><i class="fa fa-twitter" aria-hidden="true"></i></Col>
+        <Col><i class="fa fa-instagram" aria-hidden="true">Instagram:</i></Col>
+        <Col><i class="fa fa-facebook" aria-hidden="true">Facebok:</i></Col>
+        <Col><i class="fa fa-twitter" aria-hidden="true">Twitter:</i></Col>
         <Col>Email:</Col>
         <Col></Col>
         <Col></Col>
