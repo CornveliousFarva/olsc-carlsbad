@@ -1,23 +1,58 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navbar, Footer, LandingPage, About, Events, ScarfPics, GroupPics } from "./components";
+import React, { Component } from 'react';
+import './App.css';
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import { DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
+import Main from './components/main';
+import { Link } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route path="/" exact component={() => <LandingPage />} />
-          <Route path="/about" exact component={() => <About />} />
-          <Route path="/contact" exact component={() => <Events />} />
-          <Route path="/contact" exact component={() => <ScarfPics />} />
-          <Route path="/contact" exact component={() => <GroupPics />} />
-        </Switch>
-        <Footer />
-      </Router>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="demo-big-content">
+    <Layout>
+        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Official Liverpool FC Supporters Club-Carlsbad, CA</Link>} scroll>
+            <Navigation>
+                <Link to="/about">About Us</Link>
+                <Link to="/events">Events</Link>
+                <DropdownToggle nav caret>
+                Options
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>
+                  <Link to="/groupPics">Group Photos</Link>
+                </DropdownItem>
+                <DropdownItem>
+                  <Link to="/scarfPics">Scarf Photos</Link>
+                </DropdownItem>
+                </DropdownMenu>
+            </Navigation>
+        </Header>
+        <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Official Liverpool FC Supporters Club-Carlsbad, CA</Link>}>
+            <Navigation>
+                <Link to="/about">About Us</Link>
+                <Link to="/events">Events</Link>
+                <DropdownToggle nav caret>
+                Options
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>
+                  <Link to="/groupPics">Group Photos</Link>
+                </DropdownItem>
+                <DropdownItem>
+                  <Link to="/scarfPics">Scarf Photos</Link>
+                </DropdownItem>
+                </DropdownMenu>
+            </Navigation>
+        </Drawer>
+        <Content>
+            <div className="page-content" />
+            <Main/>
+        </Content>
+    </Layout>
+</div>
+
+    );
+  }
 }
 
 export default App;
