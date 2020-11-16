@@ -1,17 +1,21 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import Navbar from './navbar'
+
 
 const About = (props) => {
   return(
     <Container>
+      <Navbar></Navbar>
       <Row>
         <Col>
         <h1>About Us</h1>
           <p>Established in 2016, the Official Liverpool FC Supporters Club-Carlsbad, California, serves the communities of northern San Diego County-Carlsbad, Oceanside, Vista, San Marcos, Escondido, Fallbrook, Encinitas, and Solana Beach. Our usual meeting place for match days-current restrictions pending is Senor Grubby's, located in the heart of downtown Carlsbad. While we represent northern San Diego, we are also glad to welcome and any all visiting Liverpool supporters from around the world to stop on by for a match if they're in the area.</p>
         </Col>
       </Row>
-      <Row>
         <h2>Directions to Grubby's</h2>
+      <Row>
+        
         <Col xs="6" sm="4">
           <h3>From the North-Oceanside and beyond</h3>
             <p>Take Interstate 5 South to Carlsbad Village Drive. Make a right on Carlsbad Village Drive. Follow Carlsbad Village Drive until you see the train tracks. Grubby's is just past the train tracks and is on the left hand side.</p>

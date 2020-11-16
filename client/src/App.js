@@ -1,7 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import { DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText
+} from 'reactstrap';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
 
@@ -27,7 +40,7 @@ class App extends Component {
                 </DropdownMenu>
             </Navigation>
         </Header>
-        <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Official Liverpool FC Supporters Club-Carlsbad, CA</Link>}>
+        <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/"></Link>}>
             <Navigation>
                 <Link to="/about">About Us</Link>
                 <Link to="/events">Events</Link>
