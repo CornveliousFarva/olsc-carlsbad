@@ -4,13 +4,16 @@ import { Switch, Route } from 'react-router-dom';
 import LandingPage from './landingpage';
 import About from './about';
 import Events from './events';
+import GroupPics from './groupPics'
+import ScarfPics from './scarfPics'
 
 const Main = () => (
   <Switch>
     <Route exact path="/" component={LandingPage} />
     <Route path="/about" component={About} />
     <Route path="/events" component={Events} />
-
+    <Route path="/groupPics" component={GroupPics} />
+    <Route path="/scarfPics" component={ScarfPics} />
   </Switch>
 )
 
