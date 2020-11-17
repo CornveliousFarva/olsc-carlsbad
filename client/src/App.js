@@ -25,7 +25,7 @@ class App extends Component {
             </Navigation>
         </Header>
         <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Official Liverpool FC Supporters Club-Carlsbad, CA</Link>}>
-        <Navigation>
+            <Navigation>
                 <Link to="/about">About Us</Link>
                 <Link to="/events">Events</Link>
                 <Link to="/contact">Contact</Link>
