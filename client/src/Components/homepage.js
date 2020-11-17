@@ -1,11 +1,9 @@
 import React from 'react';
 import { Jumbotron, Container, Row, Col } from 'reactstrap';
-import Navbar from './navbar'
 
 const Landing = (props) => {
   return (
     <div>
-      <Navbar></Navbar>
       <Jumbotron fluid>
         <Container fluid>
           <h1 className="display-3">Official Liverpool FC Supporters Club- Carlsbad, California</h1>

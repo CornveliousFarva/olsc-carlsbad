@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import LandingPage from './landingpage';
+import LandingPage from './homepage';
 import About from './about';
 import Events from './events';
 import GroupPics from './groupPics'
