@@ -1,12 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import Navbar from './navbar'
 
 
 const About = (props) => {
   return(
     <Container>
-      <Navbar></Navbar>
       <Row>
         <Col>
         <h1>About Us</h1>
