@@ -10,10 +10,10 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
 } from 'reactstrap';
 import Main from './components/main';
 import { Link } from 'react-router-dom'
+import "./App.css";
 
 const App = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +21,9 @@ const App = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div class="navbar">
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/homepage">OLSC Carlsbad</NavbarBrand>
+        <NavbarBrand href="/">OLSC Carlsbad</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -38,12 +38,12 @@ const App = (props) => {
                 Pictures
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem href="/components/groupPics">
+                <Button tag={Link} to="/groupPics">
                   Group Pics
-                </DropdownItem>
-                <DropdownItem href="/components/scarfPics">
+                </Button>
+                <Button tag={Link} to="/scarfPics">
                   Scarf Pics
-                </DropdownItem>
+                </Button>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
