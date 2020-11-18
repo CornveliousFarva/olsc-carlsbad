@@ -1,11 +1,17 @@
 .App {
   text-align: center;
+  position: top;
 }
 
 .navbar{
   background-color: #891115;
   color: black;
   align-items: center;
+  position: top;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: .5rem 1rem;
 }
 
 .h1{
