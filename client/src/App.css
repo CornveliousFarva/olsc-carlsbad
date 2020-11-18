@@ -5,7 +5,9 @@
 .navbar{
   background-color: #891115;
   color: black;
+  align-items: center;
 }
-h1{
+
+.h1{
   padding: 100px bottom;
 }
