@@ -5,7 +5,7 @@ import './about.css'
 
 const About = (props) => {
   return(
-    <Container>
+    <Container fluid>
       <Row>
         <Col>
         <h1>About Us</h1>
