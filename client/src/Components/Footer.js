@@ -3,20 +3,26 @@ import { Container, Row, Col } from 'reactstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
-  faInstagram
+  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import './footer.css';
 
-const Footer = (props) => {
-  <Container fluid>
-    <Row>
-        <Col><FontAwesomeIcon icon={faTwitter} size="2x"/></Col>
-        <Col><FontAwesomeIcon icon={faInstagram} size="2x"/>.col</Col>
-        <Col>.col</Col>
-        <Col>.col</Col>
-      </Row>
-  </Container>
+function Footer() {
+  return (
+    <Container fluid>
+      <div className="footer">
+        <div class="footer-container">
+          <Row>
+            <Col><FontAwesomeIcon icon={faTwitter} size="3x"/>@socal_kopites</Col>
+            <Col><FontAwesomeIcon icon={faInstagram} size="3x"/>@socal_kopites</Col>
+            <Col></Col>
+            <Col></Col>
+          </Row>
+        </div>
+    </div>
+    </Container>
+    
+  );
 }
-
 
 export default Footer;
