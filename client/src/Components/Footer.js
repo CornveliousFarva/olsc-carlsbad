@@ -10,8 +10,7 @@ import './footer.css';
 function Footer() {
   return (
     <Container fluid>
-      <div className="footer">
-        <div class="footer-container">
+      <div className="footer-container">
           <Row>
             <Col><FontAwesomeIcon icon={faTwitter} size="3x"/>@socal_kopites</Col>
             <Col><FontAwesomeIcon icon={faInstagram} size="3x"/>@socal_kopites</Col>
@@ -19,7 +18,6 @@ function Footer() {
             <Col></Col>
           </Row>
         </div>
-    </div>
     </Container>
     
   );
