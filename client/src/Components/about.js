@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import Footer from './footer';
 import './about.css'
 
 
@@ -34,6 +35,7 @@ const About = (props) => {
           <p>There are several parking within walking distance, including one across the street. Parking at Grubby's is EXTREMELY limited.</p>
         </Col>
       </Row>
+      <Footer />
     </Container>
   )
 }

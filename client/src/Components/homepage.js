@@ -1,5 +1,6 @@
 import React from 'react';
 import { Jumbotron, Container, Row, Col } from 'reactstrap';
+import Footer from './footer';
 
 const Landing = (props) => {
   return (
@@ -23,6 +24,7 @@ const Landing = (props) => {
           </Row>
         </Container>
       </Jumbotron>
+      <Footer />
     </div>
   );
 };

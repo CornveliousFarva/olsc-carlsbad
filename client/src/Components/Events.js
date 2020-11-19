@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container } from 'reactstrap'
+import Footer from './footer'
 
     function Events(){
         return(
@@ -9,6 +10,7 @@ import { Container } from 'reactstrap'
                 <p>Note 1: Game times are subject to change.</p>
                 <p>Note 2: Due to Covid restrictions, event meetups are also subject to change based on local health guidelines</p>
             </div>  
+            <Footer />
             </Container>
         )
     }
