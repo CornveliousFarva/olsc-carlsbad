@@ -5,6 +5,7 @@ import {
   faTwitter,
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
+import './footer.css';
 
 const Footer = (props) => {
   <Container fluid>
