@@ -32,11 +32,15 @@ const About = (props) => {
       <Row>
         <Col>
         <h2>Parking</h2>
-          <p>There are several parking within walking distance, including one across the street. Parking at Grubby's is EXTREMELY limited.</p>
+          <p>There are several parking lots within walking distance, including one across the street. Parking at Grubby's is EXTREMELY limited.</p>
         </Col>
       </Row>
-      <Footer />
+      <div className="footer-container">
+        <Footer />
+      </div>
+      
     </Container>
+    
   )
 }
 
