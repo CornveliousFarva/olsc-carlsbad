@@ -9,7 +9,7 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  Button
+  NavLink
 } from 'reactstrap';
 import { Link } from 'react-router-dom'
 
@@ -26,22 +26,22 @@ const CustomNavbar = (props) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <Button tag={Link} to="/about">About</Button>
+                <NavLink tag={Link} to="/about">About</NavLink>
               </NavItem>
               <NavItem>
-              <Button tag={Link} to="/events">Events</Button>
+              <NavLink tag={Link} to="/events">Events</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Pictures
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <Button tag={Link} to="/groupPics">
+                  <NavLink tag={Link} to="/groupPics">
                     Group Pics
-                  </Button>
-                  <Button tag={Link} to="/scarfPics">
+                  </NavLink>
+                  <NavLink tag={Link} to="/scarfPics">
                     Scarf Pics
-                  </Button>
+                  </NavLink>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
