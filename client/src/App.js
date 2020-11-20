@@ -30,8 +30,8 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/events" component={Events} />
-          <Route path="groupPics" component={GroupPics} />
-          <Route path="scarfPics" component={ScarfPics} />
+          <Route path="/groupPics" component={GroupPics} />
+          <Route path="/scarfPics" component={ScarfPics} />
         </div>
       </Router>
     );
