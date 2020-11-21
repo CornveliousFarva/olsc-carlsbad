@@ -1,17 +1,4 @@
 import React, { Component } from 'react';
-// import {
-//   Collapse,
-//   Button,
-//   Navbar,
-//   NavbarToggler,
-//   NavbarBrand,
-//   Nav,
-//   NavItem,
-//   UncontrolledDropdown,
-//   DropdownToggle,
-//   DropdownMenu,
-// } from 'reactstrap';
-// import Main from './components/main';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import "./App.css";
 import Home from './components/homepage';
