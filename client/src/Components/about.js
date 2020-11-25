@@ -35,9 +35,7 @@ const About = (props) => {
           <p>There are several parking lots within walking distance, including one across the street. Parking at Grubby's itself is EXTREMELY limited.</p>
         </Col>
       </Row>
-      <div className="footer-container">
         <Footer />
-      </div>
       
     </Container>
     
