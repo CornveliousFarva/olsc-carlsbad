@@ -13,9 +13,8 @@ function Footer() {
       <div className="footer-container">
           <Row>
             <Col><FontAwesomeIcon icon={faTwitter} size="3x"/>@socal_kopites</Col>
+            <Col><img src="client/src/club-crest-red.PNG" alt="club-crest"></img></Col>
             <Col><FontAwesomeIcon icon={faInstagram} size="3x"/>@socal_kopites</Col>
-            <Col></Col>
-            <Col></Col>
           </Row>
         </div>
     </Container>
