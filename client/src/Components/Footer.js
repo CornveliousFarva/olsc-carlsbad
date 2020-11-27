@@ -14,7 +14,7 @@ function Footer() {
             <Col>
               <FontAwesomeIcon icon={faTwitter} size="3x"/>@socal_kopites</Col>
             <Col>
-              <img witdth="50%"src="/images/club-crest-white-2.png" size="50%" alt="Official Supporters Club Crest" /></Col>
+              <img width="50%" height="50%" src="/images/club-crest-white-2.png" size="50%" alt="Official Supporters Club Crest" /></Col>
             <Col>
               <FontAwesomeIcon icon={faInstagram} size="3x"/>@socal_kopites</Col>
           </Row>
