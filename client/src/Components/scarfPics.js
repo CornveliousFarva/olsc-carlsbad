@@ -13,8 +13,24 @@ const ScarfPics = (props) => {
       </Row>
       <Row>
       </Row>
+      <img src="/images/scarfPics/scarf-design.png" alt="scarf design pic" />
       <p>This is our scarf, respresenting the city of Carlsbad with the arches that feature the city's name, as well as Liverpool's 6 European Cups. From the beaches of California, to the cornfields of Iowa, and the Fields of Anfield Road, it has been many places.</p>
       <h2>More Pictures</h2>
+      <Row>
+        <Col></Col>
+        <Col></Col>
+        <Col></Col>
+      </Row>
+      <Row>
+        <Col></Col>
+        <Col></Col>
+        <Col></Col>
+      </Row>
+      <Row>
+        <Col></Col>
+        <Col></Col>
+        <Col></Col>
+      </Row>
       <Footer />
     </Container>
   )

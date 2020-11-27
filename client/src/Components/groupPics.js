@@ -8,6 +8,13 @@ const GroupPics = (props) => {
   <Container>
     <Row>
       <Col></Col>
+      <Col></Col>
+      <Col></Col>
+    </Row>
+    <Row>
+      <Col></Col>
+      <Col></Col>
+      <Col></Col>
     </Row>
     <Footer />
   </Container>

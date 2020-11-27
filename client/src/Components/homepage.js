@@ -10,10 +10,6 @@ const Landing = (props) => {
           <Row>
             <Col>
               <img height="50%" src="/images/club-crest-white-2.jpg" alt="Club-Crest-White"/>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
               <h1 className="display-3">Official Liverpool FC Supporters Club- Carlsbad, California</h1>
             </Col>
           </Row>
