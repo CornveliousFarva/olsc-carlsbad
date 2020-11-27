@@ -9,7 +9,7 @@ const Landing = (props) => {
         <Container fluid>
           <Row>
             <Col>
-              <img height="50%" src="/images/club-crest-white-2.jpg" alt=""/>
+              <img height="50%" src="/images/club-crest-white-2.jpg" alt="Club-Crest-White"/>
             </Col>
           </Row>
           <Row>
