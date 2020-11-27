@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, CardImg } from 'reactstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
@@ -13,7 +13,7 @@ function Footer() {
       <div className="footer-container">
           <Row>
             <Col><FontAwesomeIcon icon={faTwitter} size="3x"/>@socal_kopites</Col>
-            <Col><img src="/images/club-crest-white-2.png" size="50%" alt="Official Supporters Club Crest" /></Col>
+            <Col><CardImg src="/images/club-crest-white-2.png" size="50%" alt="Official Supporters Club Crest" /></Col>
             <Col><FontAwesomeIcon icon={faInstagram} size="3x"/>@socal_kopites</Col>
           </Row>
         </div>
