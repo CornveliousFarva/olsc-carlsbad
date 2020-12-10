@@ -9,7 +9,7 @@ import Footer from './footer'
               <div className="events-container">
                 <h1>Upcoming Games and Events</h1>
                 <p>Note 1: Game times are subject to change and are listed in Pacific Time.</p>
-                <p>Note 2: Due to Covid restrictions, event meetups are also subject to change based on local health guidelines</p>
+                <p>Note 2: Due to Covid restrictions, event meetups are also subject to change based on local health guidelines. Even though there may or may not be events, please try and support Grubby's during these trying times.</p>
             </div> 
             <Table responsive>
       <thead>
@@ -65,9 +65,9 @@ import Footer from './footer'
         </tr>
       </tbody>
     </Table>
-            <Footer />
+    <Footer />
             </Container>
         )
-    }
+  }
 
 export default Events
