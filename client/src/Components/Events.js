@@ -24,36 +24,44 @@ import Footer from './footer'
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
-          <td>11/20/2020</td>
-          <td>Leicester City</td>
-          <td>11:15</td>
+          <th scope="row">4</th>
+          <td>12/13/2020</td>
+          <td>Fulham</td>
+          <td>8:30</td>
           <td>NBC Sports Network</td>
-          <td>No event-Covid restrictions</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>11/25/2020</td>
-          <td>Atalanta</td>
-          <td>12:00</td>
-          <td>CBS Sports</td>
-          <td>No event-weekday game</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>11/28/2020</td>
-          <td>Brighton</td>
-          <td>4:30</td>
-          <td>NBC Sports Network</td>
-          <td>No event-Covid restrictions</td>
+          <td>No event-COVID restrictions</td>
         </tr>
         <tr>
           <th scope="row">4</th>
-          <td>12/1/2020</td>
-          <td>Ajax</td>
+          <td>12/16/2020</td>
+          <td>Tottenham Hotspur</td>
           <td>12:00</td>
-          <td>CBS Sports Network</td>
+          <td>NBC Sports Network</td>
           <td>No event-weekday game</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>12/19/2020</td>
+          <td>Ajax</td>
+          <td>4:30</td>
+          <td>NBC Sports Network</td>
+          <td>No event-COVID restrictions</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>12/27/2020</td>
+          <td>West Brom</td>
+          <td>8:30</td>
+          <td>NBC Sports Network</td>
+          <td>No event-COVID restrictions</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>12/30/2020</td>
+          <td>Newcastle United</td>
+          <td>12:00</td>
+          <td>NBC Sports Network</td>
+          <td>No event-COVID restrictions</td>
         </tr>
       </tbody>
     </Table>
