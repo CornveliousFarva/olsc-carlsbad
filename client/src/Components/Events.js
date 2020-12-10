@@ -42,7 +42,7 @@ import Footer from './footer'
         <tr>
           <th scope="row">4</th>
           <td>12/19/2020</td>
-          <td>Ajax</td>
+          <td>Crystal Palace</td>
           <td>4:30</td>
           <td>NBC Sports Network</td>
           <td>No event-COVID restrictions</td>
