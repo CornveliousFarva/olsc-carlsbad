@@ -9,6 +9,7 @@ I'm the vice president and one of the original members of the Official Liverpool
 -Reactstrap: design <a href="https://reactstrap.github.io/">
 -React Router Dom: routing <a href="https://reactrouter.com/web/guides/quick-start">
 -Font Awesome: icons used in the footer for social media links <a href="https://fontawesome.com/">
+-Netlify: hosts the site <a href="https://www.netlify.com/">
 
 # Installation
 1. Clone the repository using git clone.
